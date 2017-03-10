@@ -1,0 +1,33 @@
+@import "mixins.scss";
+
+.btn{
+
+	width: $btn-width;
+	height: $btn-height;
+	font-size: $font-size-base;
+    text-align: center;
+    line-height: $line-height-btn;	
+}
+
+.btn-default{
+	background-color: $color-green-mint;
+    color: white;
+    @include border-radius();
+    @include transition();
+
+    &:hover{
+    	background-color: darken($color-green-mint, 10%);
+    	cursor: pointer;
+	    @include transition();
+    }
+}
+
+.btn-modal{
+    display: block;
+    margin: 0 auto;
+
+    .btn{
+        display: block;
+        margin: 0 auto;
+    }
+}

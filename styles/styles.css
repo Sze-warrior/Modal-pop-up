@@ -1,0 +1,35 @@
+.btn { width: 200px; height: 48px; font-size: 16px; text-align: center; line-height: 48px; }
+
+.btn-default { background-color: #2ab754; color: white; border-radius: 100px; -webkit-transition: 0.3s; transition: 0.3s; }
+.btn-default:hover { background-color: #208e41; cursor: pointer; -webkit-transition: 0.3s; transition: 0.3s; }
+
+.btn-modal { display: block; margin: 0 auto; }
+.btn-modal .btn { display: block; margin: 0 auto; }
+
+html, body { font-family: "helvetica", "Arial", "Time new roman"; padding: 0; margin: 0; height: 100%; }
+
+main { position: relative; }
+main .container { max-width: 960px; margin: 0 auto; display: block; }
+main .intro { padding-bottom: 30px; }
+main .intro h3 { font-size: 22px; color: #4d4d4d; text-align: center; font-weight: 300; }
+
+html, body { font-family: "helvetica", "Arial", "Time new roman"; padding: 0; margin: 0; height: 100%; }
+
+main { position: relative; }
+main .container { max-width: 960px; margin: 0 auto; display: block; }
+main .intro { padding-bottom: 30px; }
+main .intro h3 { font-size: 22px; color: #4d4d4d; text-align: center; font-weight: 300; }
+
+.modal-container { z-index: -2; position: absolute; min-height: 120vh; width: 100%; background: transparent; margin-top: -22px; -webkit-transition: 0.3s; transition: 0.3s; }
+.modal-container.visible { z-index: 2; background: rgba(0, 0, 0, 0.8); }
+
+.modal-wrapper { max-width: 700px; min-height: 450px; background-color: white; opacity: 0; margin: 100px auto; display: block; -webkit-transition: 0.3s; transition: 0.3s; padding: 10px; }
+.modal-wrapper.visible { opacity: 1; }
+.modal-wrapper .escape { text-align: right; margin: 0; -webkit-transition: 0.3s; transition: 0.3s; }
+.modal-wrapper .escape:hover { -webkit-transition: 0.3s; transition: 0.3s; cursor: pointer; color: #2ab754; }
+.modal-wrapper .modal-heading { padding: 60px 30px 30px; font-size: 24px; font-weight: 300; text-align: center; margin: 0; }
+.modal-wrapper .modal-content { padding: 30px; text-align: center; margin: 0; }
+.modal-wrapper .btn-escape { display: block; margin: 30px auto 0; }
+
+@media screen and (max-width: 767px) { .modal-wrapper { margin: 20px 10px; } }
+/*# sourceMappingURL=styles.css.map */
