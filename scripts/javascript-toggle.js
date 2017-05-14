@@ -1,25 +1,21 @@
 var btnToggle = document.querySelector('div.btn-modal');
-var escapeModal = document.querySelector('p.escape');
-var btnEscapeModal = document.querySelector('.btn-escape');
-
-btnToggle.addEventListener('click', modalPopUp, false);
-escapeModal.addEventListener('click', modalPopHide, false);
-btnEscapeModal.addEventListener('click', modalPopHide, false);
-
-
+var escapeModal = document.querySelectorAll('.btn-escape');
+var modalContainer = document.querySelector('div.modal-container');
+var modalWrapper = document.querySelector('div.modal-wrapper');
 
 function modalPopUp(e){
-	var modalContainer = document.querySelector('div.modal-container');
-	var modalWrapper = document.querySelector('div.modal-wrapper');
-	
 	modalContainer.classList.add('visible');
 	modalWrapper.classList.add('visible');
 }
 
-function modalPopHide(e){
-	var modalContainer = document.querySelector('div.modal-container');
-	var modalWrapper = document.querySelector('div.modal-wrapper');
-
+function modalHide(e){
 	modalContainer.classList.remove('visible');
 	modalWrapper.classList.remove('visible');	
 }
+
+btnToggle.addEventListener('click', modalPopUp, false);
+
+for(var i = 0; i < escapeModal.length; i++){
+	escapeModal[i].addEventListener('click', modalHide, false);
+};
+

@@ -1,25 +1,42 @@
 @import "mixins.scss";
 
-.btn{
+.btn, .btn-ghost{
 
 	width: $btn-width;
 	height: $btn-height;
 	font-size: $font-size-base;
     text-align: center;
-    line-height: $line-height-btn;	
-}
-
-.btn-default{
-	background-color: $color-green-mint;
+    line-height: $line-height-btn;
+    background-color: $color-green-mint;
     color: white;
     @include border-radius();
     @include transition();
 
     &:hover{
-    	background-color: darken($color-green-mint, 10%);
-    	cursor: pointer;
-	    @include transition();
+        background-color: darken($color-green-mint, 10%);
+        cursor: pointer;
+        @include transition();
+    }    	
+}
+
+.btn-ghost{
+    background-color: white;
+    color: $color-green-mint; 
+    border: 2px solid $color-green-mint; 
+
+    &:hover{
+        color: white; 
+        border: 2px solid darken($color-green-mint, 10%); 
     }
+}
+
+.btn-escape{
+    margin-right: 15px;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
 }
 
 .btn-modal{

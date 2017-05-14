@@ -7,7 +7,7 @@
 	width: 100%;
 	background: rgba(0, 0, 0, 0);
 	margin-top: -22px;
-	@include transition(0.3s);
+	@include transition(0.4s);
 
 	&.visible{
 		z-index: 2;
@@ -27,15 +27,16 @@
 
 	&.visible{
 		opacity: 1;
+		margin-top:30px;
 	}
 
 	.escape{
 		text-align: right;
 		margin: 0;
-		@include transition(0.3s);
+		@include transition(0.2s);
 
 		&:hover{
-			@include transition(0.3s);
+			@include transition(0.2s);
 			cursor: pointer;
 			color: $color-green-mint;
 		}
@@ -53,12 +54,7 @@
 		padding: 30px;
     	text-align: center;
     	margin: 0;
-	}
-
-    .btn-escape {
-    	display: block;
-    	margin: 30px auto 0;
-    }	
+	}	
 
 }
 
