@@ -7,12 +7,12 @@
 	width: 100%;
 	background: rgba(0, 0, 0, 0);
 	margin-top: -22px;
-	@include transition(0.2s);
+	@include transition(0.3s);
 
 	&.visible{
 		z-index: 2;
 		background: rgba(0, 0, 0, 0.8);
-		@include transition(0.2s);
+		@include transition(0.3s);
 	}
 }
 
@@ -23,11 +23,11 @@
 	opacity: 0;
 	margin: 100px auto;
 	display: block;
-	@include transition(0.2s);
+	@include transition(0.3s);
 	padding: 10px;
 
 	&.visible{
-		@include transition(0.2s);
+		@include transition(0.3s);
 		opacity: 1;
 		margin-top:30px;
 	}
@@ -35,10 +35,10 @@
 	.escape{
 		text-align: right;
 		margin: 0;
-		@include transition(0.2s);
+		@include transition(0.3s);
 
 		&:hover{
-			@include transition(0.2s);
+			@include transition(0.3s);
 			cursor: pointer;
 			color: $color-green-mint;
 		}
